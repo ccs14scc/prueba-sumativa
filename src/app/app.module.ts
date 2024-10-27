@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { UbicanosComponent } from './componentes/ubicanos/ubicanos.component';
 import { ContactanosComponent } from './componentes/contactanos/contactanos.component';
+import { FormularioComponent } from './componentes/formulario/formulario.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
     UbicanosComponent,
-    ContactanosComponent
+    ContactanosComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

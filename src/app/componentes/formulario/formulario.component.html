@@ -1,0 +1,16 @@
+<form [formGroup]="contactoForm" (ngSubmit)="onSubmit()">
+    <br>
+    <h1>Estamos Aquí para Ayudarte</h1>
+    <p>"No dudes en consultar o solicitar nuestros servicios."</p>
+    <br>
+    <div class="mx-auto">
+      <input type="text" formControlName="nombre" class="form-control" placeholder="Nombre" required><br>
+      <input type="text" formControlName="apellido" class="form-control" placeholder="Apellido" required><br>
+      <textarea formControlName="mensaje" class="form-control" placeholder="Mensaje" rows="4" required></textarea>
+  
+      <br>
+      
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+  </form>
+  

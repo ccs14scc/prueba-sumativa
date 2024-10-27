@@ -1,1 +1,47 @@
-<p>contactanos works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: #00ff5e;">
+        Nuestras redes sociales
+    </h1>
+    <div>
+        <table>
+            <tr>
+                <td><a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr"><i class="fa-brands fa-facebook"></i></a></td>
+                <td><a href="https://www.instagram.com/"><i class="fab fa-instagram instagram-icon"></i></a></td>
+                <td><a href="https://www.whatsapp.com/?lang=es_LA"><i class="fab fa-whatsapp whatsapp-icon"></i></a></td>
+            </tr>
+        </table>
+    </div>
+    <form>
+        <br>
+        <h1>
+            <i class="fa-solid fa-envelope mensaje-icon"></i>
+            <u style="color: rgb(43, 43, 119)">Déjanos tu Mensaje</u>
+        </h1>
+        <p>"No dudes en consultar o solicitar nuestros servicios."</p>
+        <br>
+        <div class="mx-auto" style="width: 30%; font-family: Comic Sans MS;">
+            <input type="text" formControlName="nombre" class="form-control" placeholder="Nombre" required><br>
+            <input type="text" formControlName="apellido" class="form-control" placeholder="Apellido" required><br>
+            <input type="email" formControlName="email" class="form-control" placeholder="Correo Electrónico" required><br>
+            <input type="number" formControlName="numeroT" class="form-control" placeholder="Numero telefonico" required><br>
+            <textarea formControlName="mensaje" class="form-control" placeholder="Mensaje" rows="4" required></textarea>
+    
+          <br>
+        
+        <button style="width: 100%; font-family: Comic Sans MS;" type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+    </form>
+    <footer class="footer">
+        <img src="/assets/img/logotipo.png" alt="Logotipo" class="logo">
+        <h2>Mercy Developer</h2>
+        <p>Contacto: +56 1234 5678</p>
+      </footer>
+</body>
+</html>

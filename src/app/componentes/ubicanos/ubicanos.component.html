@@ -1,1 +1,31 @@
-<p>ubicanos works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicanos</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPY8t-7bDq8TBzuJIgMQuw6UTcoAGeBeI"></script>
+</head>
+<body>
+    <h1 style="text-align: center;">
+        <i class="fa-solid fa-map-location-dot"></i>
+        Ubicación de Nuestra Tienda
+    </h1>
+<div class="container mt-5">
+    <h2>Encuentra nuestra tienda aquí</h2>
+    <div class="map-container">
+        <iframe src="https://storage.googleapis.com/maps-solutions-6cyppjs9gp/locator-plus/tg3s/locator-plus.html"
+         width="100%" height="100%"
+        style="border:0;"
+        loading="lazy">
+        </iframe>
+        <app-formulario></app-formulario>
+    </div>
+</div>
+<footer class="footer">
+    <img src="/assets/img/logotipo.png" alt="Logotipo" class="logo">
+    <h2>Mercy Developer</h2>
+    <p>Contacto: +56 1234 5678</p>
+  </footer>
+</body>
+</html>

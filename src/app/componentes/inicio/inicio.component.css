@@ -1,0 +1,36 @@
+h1 {
+    color: rgb(43, 43, 119);
+}
+.container {
+    display: flex;
+    justify-content: auto;
+    align-items: center; /* Alinea verticalmente en el centro */
+}
+.img2 {
+    max-width: 100%; /* Ajusta el tamaño de la imagen */
+    height: auto;     /* Mantiene la proporción de la imagen */
+    margin-right: auto;
+    margin-left: -120px;
+}
+.list-group {
+    font-size: 200%;
+    margin-right: -140px;
+    color: rgb(255, 145, 0);
+}
+.footer {
+    
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: left;
+    position: absolute;
+    bottom: -450px;
+    width: 100%;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+li {
+    color: rgb(255, 94, 0);
+}

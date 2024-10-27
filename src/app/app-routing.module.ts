@@ -7,6 +7,10 @@ import { ContactanosComponent } from './componentes/contactanos/contactanos.comp
 
 const routes: Routes = [
   {
+    path:"",
+    component: InicioComponent
+  },
+  {
     path:"inicio",
     component: InicioComponent
   },
@@ -18,17 +22,6 @@ const routes: Routes = [
     path:"contactanos",
     component: ContactanosComponent
   },
-  { path: 'inicio',
-    component: InicioComponent
-  },
-
-  { path: 'ubicanos', component: UbicanosComponent },
-
-  { path: 'contactanos', component: ContactanosComponent },
-
-
-  { path: '', redirectTo: '/inicio', pathMatch: 'full' }, // Redireccionar por defecto
-  
 ];
 
 @NgModule({

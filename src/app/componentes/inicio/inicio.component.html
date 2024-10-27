@@ -3,34 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .image-container {
-            display: flex;
-            justify-content: center; 
-            align-items: center; 
-            height: 65vh;
-        }
-        .list-group {
-            display: flex;
-            text-align: center;
-            
-            
-
-        }
-    </style>
+    <title>Inicio</title>
 </head>
 <body>
-    <h1 style="text-align: center;">Contacto soporte</h1>
-    <div class="image-container">
-        <img src="assets/img/5647e863e456a_thumb900.webp" alt="error">
+<div>
+    <div class="container">
+        <img class="img2" src="assets/img/5647e863e456a_thumb900.webp" alt="error">
+        <div class="info">
+            <ul class="list-group">
+                <h1>
+                    <i class="fas fa-wrench"></i>
+                    Servicio Tecnico
+                </h1>
+                <h5>Nos especializamos en:</h5>
+                <li class="list-group-item">Instalación de Sistemas Operativos.</li>
+                <li class="list-group-item">Instalación de Software de Oficina.</li>
+                <li class="list-group-item">Reparación de computadoras.</li>
+            </ul>
+        </div>
     </div>
     <div>
-        <div class="list-group">
-            <button type="button" class="list-group-item list-group-item-action">Instalacion de Sistemas Operativos</button>
-            <button type="button" class="list-group-item list-group-item-action">Instalacion de Software de Oficina</button>
-            <button type="button" class="list-group-item list-group-item-action">reparacion de computadoras</button>
-          </div>
+        <app-formulario></app-formulario>
     </div>
+</div>
+<footer class="footer">
+    <img src="/assets/img/logotipo.png" alt="Logotipo" class="logo">
+    <h2>Mercy Developer</h2>
+    <p>Contacto: +56 1234 5678</p>
+  </footer>
 </body>
 </html>
