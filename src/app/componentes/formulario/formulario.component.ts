@@ -1,36 +1,31 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-formulario',
   templateUrl: './formulario.component.html',
   styleUrls: ['./formulario.component.css']
 })
-export class FormularioComponent implements OnInit {
-  contactoForm: FormGroup;
+export class FormularioComponent {
+  formularioForm;
+  mensaje: string = '';
 
   constructor(private formBuilder: FormBuilder) {
-  
-    this.contactoForm = this.formBuilder.group({
+    this.formularioForm = this.formBuilder.group({
       nombre: ['', Validators.required],
       apellido: ['', Validators.required],
       mensaje: ['', Validators.required]
     });
   }
 
-  ngOnInit(): void {
-    // Aquí puedes agregar lógica adicional si es necesario
+  ngOnInit(){
+    console.log("hola")
   }
 
-  // Método para manejar la presentación del formulario
-  onSubmit() {
-    if (this.contactoForm.valid) {
-      const formData = this.contactoForm.value;
-      console.log('Formulario enviado:', formData);
-      // Aquí puedes enviar los datos a tu servicio o backend
-      this.contactoForm.reset(); // resetea el formulario después de enviar
-    } else {
-      console.log('Formulario inválido');
+  enviarDatos(){
+    let datos_formulario = this.formularioForm.value;
+    console.log(this.formularioForm.value);
+    const datos = this.formularioForm.value;
+    this.mensaje = `${datos.nombre} ${datos.apellido}`;
     }
   }
-}

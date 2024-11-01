@@ -1,16 +1,34 @@
-<form [formGroup]="contactoForm" (ngSubmit)="onSubmit()">
-    <br>
-    <h1>Estamos Aquí para Ayudarte</h1>
-    <p>"No dudes en consultar o solicitar nuestros servicios."</p>
-    <br>
-    <div class="mx-auto">
-      <input type="text" formControlName="nombre" class="form-control" placeholder="Nombre" required><br>
-      <input type="text" formControlName="apellido" class="form-control" placeholder="Apellido" required><br>
-      <textarea formControlName="mensaje" class="form-control" placeholder="Mensaje" rows="4" required></textarea>
-  
-      <br>
-      
-      <button type="submit" class="btn btn-primary">Enviar</button>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <form [formGroup]="formularioForm" (ngSubmit)="enviarDatos()">
+        <br>
+        <h1>
+            <a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank"><i class="fa-solid fa-envelope mensaje-icon"></i></a>
+            <u>Déjanos tu Mensaje</u>
+        </h1>
+        <p>"No dudes en consultar o solicitar nuestros servicios."</p>
+        <div class="mx-auto" style="width: 30%; font-family: Comic Sans MS;">
+            <div class="formGroup input-2">
+                <label>Nombre</label>
+                <input type="text" formControlName="nombre" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+                <small class="form-text text-muted">Debe ingresar un Nombre.</small>
+            </div>
+            <div class="formGroup input-2">
+                <label>Apellido</label>
+                <input type="text" formControlName="apellido" class="form-control" id="apellido" placeholder="Ingresa tu apellido" required>
+                <small class="form-text text-muted">Debe ingresar un Apellido.</small>
+            </div>
+            <div class="formGroup input-2">
+                <label>Mensaje:</label>
+                <textarea formControlName="mensaje" class="form-control" id="mensaje" placeholder="Escribe tu consulta o solicitud aquí..." rows="4" required></textarea>
+                <small class="form-text text-muted">Debe ingresar un mensaje.</small>
+            </div>
+        <br>
+        <button class="input-2" type="submit" class="btn btn-primary">Enviar</button>
+        <p *ngIf="mensaje">Hola, <b>{{mensaje}}</b>. Hemos recibido su consulta/solicitud y nuestro equipo de soporte técnico se pondrá en contacto con usted a la brevedad para brindarle la asistencia que necesita.</p>
+        </div>
+    </form> 
     </div>
-  </form>
-  
+  </div>
+</div>

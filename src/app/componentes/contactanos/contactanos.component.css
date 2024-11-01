@@ -28,17 +28,30 @@ td,th {
 .mensaje-icon {
     text-decoration-line: none;
 }
+.mx-auto {
+    width: 20%;
+    font-family: Comic Sans MS;
+}
+button {
+    width: 100%;
+    font-family: Comic Sans MS;
+}
 .footer {
     
     background-color: #f8f9fa;
     padding: 20px;
     text-align: left;
     position: absolute;
-    bottom: -100px;
+    bottom: -360px;
     width: 100%;
 }
-
+.footer p {
+    text-align: left;
+}
 .logo {
     width: 50px;
     height: auto;
+}
+.input-2 {
+    padding-top: 2%;
 }

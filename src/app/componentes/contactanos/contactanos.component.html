@@ -12,36 +12,56 @@
     <div>
         <table>
             <tr>
-                <td><a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr"><i class="fa-brands fa-facebook"></i></a></td>
-                <td><a href="https://www.instagram.com/"><i class="fab fa-instagram instagram-icon"></i></a></td>
-                <td><a href="https://www.whatsapp.com/?lang=es_LA"><i class="fab fa-whatsapp whatsapp-icon"></i></a></td>
+                <td><a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr" target="_blank"><i class="fa-brands fa-facebook"></i></a></td>
+                <td><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram instagram-icon"></i></a></td>
+                <td><a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><i class="fab fa-whatsapp whatsapp-icon"></i></a></td>
             </tr>
         </table>
     </div>
-    <form>
-        <br>
-        <h1>
-            <i class="fa-solid fa-envelope mensaje-icon"></i>
-            <u style="color: rgb(43, 43, 119)">Déjanos tu Mensaje</u>
-        </h1>
-        <p>"No dudes en consultar o solicitar nuestros servicios."</p>
-        <br>
-        <div class="mx-auto" style="width: 30%; font-family: Comic Sans MS;">
-            <input type="text" formControlName="nombre" class="form-control" placeholder="Nombre" required><br>
-            <input type="text" formControlName="apellido" class="form-control" placeholder="Apellido" required><br>
-            <input type="email" formControlName="email" class="form-control" placeholder="Correo Electrónico" required><br>
-            <input type="number" formControlName="numeroT" class="form-control" placeholder="Numero telefonico" required><br>
-            <textarea formControlName="mensaje" class="form-control" placeholder="Mensaje" rows="4" required></textarea>
-    
-          <br>
-        
-        <button style="width: 100%; font-family: Comic Sans MS;" type="submit" class="btn btn-primary">Enviar</button>
-        </div>
-    </form>
+    <div>
+        <form [formGroup]="formularioForm" (ngSubmit)="enviarDatos()">
+            <br>
+            <h1>
+                <a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank"><i class="fa-solid fa-envelope mensaje-icon"></i></a>
+                <u style="color: rgb(43, 43, 119)">Déjanos tu Mensaje</u>
+            </h1>
+            <p>"No dudes en consultar o solicitar nuestros servicios."</p>
+            <div class="mx-auto">
+                <div class="formGroup input-2">
+                    <label>Nombre</label>
+                    <input type="text" formControlName="nombre" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+                    <small class="form-text text-muted">Debe ingresar un Nombre.</small>
+                </div>
+                <div class="formGroup input-2">
+                    <label>Apellido</label>
+                    <input type="text" formControlName="apellido" class="form-control" id="apellido" placeholder="Ingresa tu apellido" required>
+                    <small class="form-text text-muted">Debe ingresar un Apellido.</small>
+                </div>
+                <div class="formGroup input-2">
+                    <label>Correo Electrónico</label>
+                    <input type="email" formControlName="correoE" class="form-control" id="Correo Electrónico" placeholder="Correo Electrónico" required>
+                    <small class="form-text text-muted">Debe ingresar un Correo Electrónico.</small>
+                </div>
+                <div class="formGroup input-2">
+                    <label>Numero telefonico</label>
+                    <input type="number" formControlName="numeroT" class="form-control" id="Numero Telefonico" placeholder="Ej: +56 9 1234 5678" required>
+                    <small class="form-text text-muted">Debe ingresar un Numero telefonico.</small>
+                </div>
+                <div class="formGroup input-2">
+                    <label>Mensaje:</label>
+                    <textarea formControlName="mensaje" class="form-control" id="mensaje" placeholder="Escribe tu consulta o solicitud aquí..." rows="4" required></textarea>
+                    <small class="form-text text-muted">Debe ingresar un mensaje.</small>
+                </div>
+            <br>
+            <button class="input-2" type="submit" class="btn btn-primary">Enviar</button>
+            <p *ngIf="mensaje">Hola, <b>{{mensaje}}</b> Hemos recibido su consulta/solicitud y nuestro equipo de soporte técnico se pondrá en contacto con usted a la brevedad para brindarle la asistencia que necesita.</p>
+            </div>
+        </form>
+    </div>
     <footer class="footer">
         <img src="/assets/img/logotipo.png" alt="Logotipo" class="logo">
         <h2>Mercy Developer</h2>
         <p>Contacto: +56 1234 5678</p>
-      </footer>
+    </footer>
 </body>
 </html>

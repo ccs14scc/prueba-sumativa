@@ -8,16 +8,13 @@ h2 {
     height: 550px; /* Asegúrate de que la altura esté definida */
     width: 100%;   /* Asegúrate de que el ancho esté definido */
 }
-body {
-    position:relative;
-}
 .footer {
     
     background-color: #f8f9fa;
     padding: 20px;
     text-align: left;
     position: absolute;
-    bottom: -630px;
+    bottom: -75%;
     width: 100%;
 }
 
