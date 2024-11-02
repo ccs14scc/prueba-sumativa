@@ -22,10 +22,20 @@ export class FormularioComponent {
     console.log("hola")
   }
 
-  enviarDatos(){
-    let datos_formulario = this.formularioForm.value;
-    console.log(this.formularioForm.value);
-    const datos = this.formularioForm.value;
-    this.mensaje = `${datos.nombre} ${datos.apellido}`;
+  enviarDatos() {
+
+    if (this.formularioForm.valid) {
+      let datos_formulario = this.formularioForm.value; 
+      console.log(datos_formulario); 
+      // Mostramos el mensaje solo si todos los datos están completos
+      this.mensaje = `${datos_formulario.nombre} ${datos_formulario.apellido}`;
+
+      // Limpiar el formulario después de enviar
+      this.formularioForm.reset();
+
+    } else {
+      // si no esta completo, no se muestra nada
+      this.mensaje = '';
     }
   }
+}
