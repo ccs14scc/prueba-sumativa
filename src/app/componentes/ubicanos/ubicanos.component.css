@@ -5,8 +5,8 @@ h2 {
     color:black
 }
 .map-container {
-    height: 550px; /* Asegúrate de que la altura esté definida */
-    width: 100%;   /* Asegúrate de que el ancho esté definido */
+    height: 550px; 
+    width: 100%;   
 }
 .footer {
     
@@ -14,7 +14,7 @@ h2 {
     padding: 20px;
     text-align: left;
     position: absolute;
-    bottom: -75%;
+    bottom: -95%;
     width: 100%;
 }
 

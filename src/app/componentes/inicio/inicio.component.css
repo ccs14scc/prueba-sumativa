@@ -1,32 +1,14 @@
+body {
+    font-family: Comic Sans
+    MS;
+}
 h1 {
     color: rgb(43, 43, 119);
     text-align: center;
     padding: 10px;
 }
-.img2 {
-    max-width: 100%; /* Ajusta el tamaño de la imagen */
-    height: auto;     /* Mantiene la proporción de la imagen */
-    margin-right: auto;
-    margin-left: -120px;
-}
-.list-group {
-    font-size: 200%;
-    margin-right: -140px;
-    color: rgb(255, 145, 0);
-}
-.footer {
-    
-    background-color: #f8f9fa;
-    padding: 20px;
-    text-align: left;
-    position: absolute;
-    bottom: -350px;
-    width: 100%;
-}
-
-.logo {
-    width: 50px;
-    height: auto;
+p {
+    color: rgb(43, 43, 119);
 }
 .container {
     text-align: center;
@@ -37,4 +19,34 @@ h1 {
 }
 .container p {
     font-size: 25px;
+}
+.footer {
+    
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: left;
+    position: absolute;
+    bottom: -910px;
+    width: 100%;
+}
+.footer p {
+    text-align: left;
+}
+.logo {
+    width: 50px;
+    height: auto;
+}
+.ant {
+    text-align: center;
+}
+.ant img {
+    width: 80%;
+    height: auto;
+}
+p {
+    text-align: center;
+}
+button {
+    width: 100%;
+    font-family: Comic Sans MS;
 }

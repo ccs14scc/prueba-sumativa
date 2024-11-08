@@ -11,9 +11,11 @@ export class FormularioComponent {
   mensaje: string = '';
 
   constructor(private formBuilder: FormBuilder) {
-    this.formularioForm = this.formBuilder.group({
+    this.formularioForm = this.formBuilder.group ({
       nombre: ['', Validators.required],
       apellido: ['', Validators.required],
+      correoE: ['', Validators.required],
+      numeroT: ['', Validators.required],
       mensaje: ['', Validators.required]
     });
   }
