@@ -20,24 +20,11 @@ p {
 .container p {
     font-size: 25px;
 }
-.footer {
-    
-    background-color: #f8f9fa;
-    padding: 20px;
-    text-align: left;
-    position: absolute;
-    bottom: -910px;
-    width: 100%;
-}
-.footer p {
-    text-align: left;
-}
-.logo {
-    width: 50px;
-    height: auto;
-}
 .ant {
     text-align: center;
+}
+.input-2 {
+    padding-top: 2%;  
 }
 .ant img {
     width: 80%;
@@ -48,5 +35,4 @@ p {
 }
 button {
     width: 100%;
-    font-family: Comic Sans MS;
 }

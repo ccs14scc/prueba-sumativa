@@ -1,3 +1,6 @@
+body {
+    font-family: Comic Sans MS;
+}
 h1 {
     color:black
 }
@@ -6,19 +9,5 @@ h2 {
 }
 .map-container {
     height: 550px; 
-    width: 100%;   
-}
-.footer {
-    
-    background-color: #f8f9fa;
-    padding: 20px;
-    text-align: left;
-    position: absolute;
-    bottom: -95%;
     width: 100%;
-}
-
-.logo {
-    width: 50px;
-    height: auto;
 }

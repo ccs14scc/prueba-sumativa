@@ -27,10 +27,10 @@ export class InicioComponent {
     if (this.formularioForm.valid) {
       let datos_formulario = this.formularioForm.value; 
       console.log(datos_formulario); 
-      // Mostramos el mensaje solo si todos los datos están completos
+      // se muestra el mensaje solo si todos los campos estan llenos
       this.mensaje = `${datos_formulario.nombre} ${datos_formulario.apellido}`;
 
-      // Limpiar el formulario después de enviar
+      // para resetear el formulario despues de enviar
       this.formularioForm.reset();
 
     } else {

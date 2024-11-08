@@ -8,7 +8,8 @@
 <body>
   <div>
     <div class="ant">
-      <img src="/assets/img/banner.jpg" alt="">
+      <h1>Servicio Técnico informático</h1>
+      <img src="/assets/img/slay.png" alt="">
     </div>
     <br>
     <h1>¿Qué Ofrecemos?</h1>
@@ -36,7 +37,7 @@
             <u>Déjanos tu Mensaje</u>
         </h1>
         <p>"No dudes en consultar o solicitar nuestros servicios."</p>
-        <div class="mx-auto" style="width: 30%; font-family: Comic Sans MS;">
+        <div class="mx-auto" style="width: 21%; font-family: Comic Sans MS;">
             <div class="formGroup input-2">
                 <label>Nombre</label>
                 <input type="text" formControlName="nombre" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
@@ -53,17 +54,12 @@
                 <small class="form-text text-muted">Debe ingresar un mensaje.</small>
             </div>
         <br>
-        <button class="" type="submit" class="btn btn-primary">Enviar</button><br>
-        <br>
+        <button class="input-2" type="submit" class="btn btn-primary">Enviar</button><br>
+            <br>
         <p *ngIf="mensaje">Hola, <b>{{mensaje}}</b>, su mensaje ha sido enviado correctamente.</p>
         </div>
       </form>
     </div>
   </div>
-  <footer class="footer">
-    <img src="/assets/img/logotipo.png" alt="Logotipo" class="logo">
-    <h2>Mercy Developer</h2>
-    <p>Contacto: +56 1234 5678</p>
-  </footer>
 </body>
 </html>

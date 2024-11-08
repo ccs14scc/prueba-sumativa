@@ -36,23 +36,6 @@ button {
     width: 100%;
     font-family: Comic Sans MS;
 }
-.footer {
-    
-    background-color: #f8f9fa;
-    padding: 20px;
-    text-align: left;
-    position: absolute;
-    bottom: -330px;
-    width: 100%;
-}
-.footer p {
-    text-align: left;
-    color: black;
-}
-.logo {
-    width: 50px;
-    height: auto;
-}
 .input-2 {
     padding-top: 2%;
 }

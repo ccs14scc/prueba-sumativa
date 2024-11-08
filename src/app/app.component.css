@@ -1,0 +1,35 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+nav {
+    background-color: hsla(0, 0%, 43%, 0.363) !important; 
+    color: black !important;
+    font-weight: bold;
+}
+footer {
+    background-color: hsla(0, 0%, 43%, 0.363);
+    text-align: left;  
+    height: auto;
+    padding: 1px 12px;
+    margin-top: 30px;
+}
+.logo {
+    width: 50px;
+    height: auto;
+}
+nav {
+    margin-bottom: 15px;
+}
+nav a {
+    text-decoration: none; 
+    font-size: 16px;
+    transition: transform 0.3s ease; 
+}
+  
+nav a.active {
+    font-weight: bold; 
+    color: #000; 
+    transform: scale(1.3);
+}
+  

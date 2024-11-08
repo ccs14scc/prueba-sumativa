@@ -1,45 +1,55 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <form [formGroup]="formularioForm" (ngSubmit)="enviarDatos()">
-        <br>
-        <h1>
-            <a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank"><i class="fa-solid fa-envelope mensaje-icon"></i></a>
-            <u style="color: rgb(43, 43, 119)">Déjanos tu Mensaje</u>
-        </h1>
-        <p>"No dudes en consultar o solicitar nuestros servicios."</p>
-        <div class="mx-auto" style="width: 30%; font-family: Comic Sans MS;">
-            <div class="formGroup input-2">
-                <label>Nombre</label>
-                <input type="text" formControlName="nombre" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
-                <small class="form-text text-muted">Debe ingresar un Nombre.</small>
-            </div>
-            <div class="formGroup input-2">
-                <label>Apellido</label>
-                <input type="text" formControlName="apellido" class="form-control" id="apellido" placeholder="Ingresa tu apellido" required>
-                <small class="form-text text-muted">Debe ingresar un Apellido.</small>
-            </div>
-            <div class="formGroup input-2">
-                <label>Correo Electrónico</label>
-                <input type="email" formControlName="correoE" class="form-control" id="Correo Electrónico" placeholder="Correo Electrónico" required>
-                <small class="form-text text-muted">Debe ingresar un Correo Electrónico.</small>
-            </div>
-            <div class="formGroup input-2">
-                <label>Numero telefonico</label>
-                <input type="number" formControlName="numeroT" class="form-control" id="Numero Telefonico" placeholder="Ej: +56 9 1234 5678" required>
-                <small class="form-text text-muted">Debe ingresar un Numero telefonico.</small>
-            </div>
-            <div class="formGroup input-2">
-                <label>Mensaje:</label>
-                <textarea formControlName="mensaje" class="form-control" id="mensaje" placeholder="Escribe tu consulta o solicitud aquí..." rows="4" required></textarea>
-                <small class="form-text text-muted">Debe ingresar un mensaje.</small>
-            </div>
-        <br>
-        <button class="input-2" type="submit" class="btn btn-primary">Enviar</button><br>
-        <br>
-        <p *ngIf="mensaje">Hola, <b>{{mensaje}}</b>, su mensaje ha sido enviado correctamente.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form [formGroup]="formularioForm" (ngSubmit)="enviarDatos()">
+              <br>
+              <h1>
+                  <a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank"><i class="fa-solid fa-envelope mensaje-icon"></i></a>
+                  <u style="color: rgb(43, 43, 119)">Déjanos tu Mensaje</u>
+              </h1>
+              <p>"No dudes en consultar o solicitar nuestros servicios."</p>
+              <div class="mx-auto" style="width: 30%; font-family: Comic Sans MS;">
+                  <div class="formGroup input-2">
+                      <label>Nombre</label>
+                      <input type="text" formControlName="nombre" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+                      <small class="form-text text-muted">Debe ingresar un Nombre.</small>
+                  </div>
+                  <div class="formGroup input-2">
+                      <label>Apellido</label>
+                      <input type="text" formControlName="apellido" class="form-control" id="apellido" placeholder="Ingresa tu apellido" required>
+                      <small class="form-text text-muted">Debe ingresar un Apellido.</small>
+                  </div>
+                  <div class="formGroup input-2">
+                      <label>Correo Electrónico</label>
+                      <input type="email" formControlName="correoE" class="form-control" id="Correo Electrónico" placeholder="Correo Electrónico" required>
+                      <small class="form-text text-muted">Debe ingresar un Correo Electrónico.</small>
+                  </div>
+                  <div class="formGroup input-2">
+                      <label>Numero telefonico</label>
+                      <input type="tel" formControlName="numeroT" class="form-control" id="phone" placeholder="Ej: +56 9 1234 5678" required>
+                      <small class="form-text text-muted">Debe ingresar un Numero telefonico.</small>
+                  </div>
+                  <div class="formGroup input-2">
+                      <label>Mensaje:</label>
+                      <textarea formControlName="mensaje" class="form-control" id="mensaje" placeholder="Escribe tu consulta o solicitud aquí..." rows="4" required></textarea>
+                      <small class="form-text text-muted">Debe ingresar un mensaje.</small>
+                  </div>
+                    <br>
+                    <button class="input-2" type="submit" class="btn btn-primary">Enviar</button><br>
+                    <br>
+                    <p *ngIf="mensaje">Hola, <b>{{mensaje}}</b>, su mensaje ha sido enviado correctamente.</p>
+              </div>
+          </form> 
+          </div>
         </div>
-    </form> 
-    </div>
-  </div>
-</div>
+      </div>
+</body>
+</html>
